@@ -5,7 +5,6 @@ stages:
       dockerfilePath: docker/Dockerfile
       buildContext: .
       tag: fiware-orion:${CICD_EXECUTION_SEQUENCE}
-      pushRemote: true
       registry: 127.0.0.1:34924
     env:
       PLUGIN_DEBUG: "true"
