@@ -4,9 +4,9 @@ stages:
   - publishImageConfig:
       dockerfilePath: docker/Dockerfile
       buildContext: .
-      tag: fiware-orion:${CICD_EXECUTION_SEQUENCE}
+      tag: csp2-centos-1:5000/img_fiware-orion_v2.2.0:${CICD_EXECUTION_SEQUENCE}
       pushRemote: true
-      registry: 192.168.100.176
+      registry: 192.168.100.176:5000
     env:
       PLUGIN_DEBUG: "true"
       PLUGIN_INSECURE: "true"
