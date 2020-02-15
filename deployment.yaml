@@ -2,6 +2,7 @@ apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
   name: broker1
+  namespace: default
 spec:
   replicas: 1
   template:
