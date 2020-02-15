@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: broker1-service
+  name: broker2-service
   labels:
     name: orionservice-nodeport-svc
 spec:
@@ -14,4 +14,4 @@ spec:
       nodePort: 31553
       name: https
   selector:
-    name: broker1
+    name: broker2
