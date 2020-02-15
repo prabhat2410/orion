@@ -12,7 +12,7 @@ spec:
       containers:
       
       - name: orion1
-        image: csp2-centos-1:5000/img_fiware-orion_v2.2.0:${CICD_EXECUTION_SEQUENCE}
+        image: img_fiware-orion_v2.2.0:${CICD_EXECUTION_SEQUENCE}
         resources:
          limits:
           memory: "1Gi"
